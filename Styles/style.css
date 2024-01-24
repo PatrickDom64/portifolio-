@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Silkscreen&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@600&family=Play&family=Silkscreen&family=Staatliches&display=swap');
+
+*{
+    margin: 0;
+    padding: 10px;
+}
+:root{
+    --cor-primaria  : #3C5951;
+    --cor-secundaria: #BDF2E3;
+    --cor-terciaria : #D9D9D9;
+
+}
+
+body{
+    background-color: var(--cor-primaria);
+    color: aliceblue;
+    /* height: 100vh; */
+}
+.header{
+    padding: 2% 0 0 10%;
+   
+}
+.header_menu{
+    display: flex;
+}
+
+.header_menu_link{
+    gap: 80px;
+    font-size: 1.5rem;
+    font-family: 'Silkscreen', sans-serif;
+    font-weight: 600;
+    color:var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.titulo-distaque{
+    color: var(--cor-terciaria);
+}
+.content{
+        padding: 5% 10%;
+        /* margin: 10% 15%; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 81px;
+}
+.content__apresentacao{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.content__apresentacao_titulo{
+    font-size: 2.25rem;
+    font-family: 'Silkscreen', sans-serif;
+}
+.content__apresentacao_paragrafo{
+    font-size: 1.5rem;
+    font-family: 'Albert Sans', sans-serif;
+    font-weight: 600;
+}
+.content_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+.content_links_subtitle{
+    font-family: 'Silkscreen', sans-serif;
+    font-weight: 400;
+}
+.content_links_navigation{
+    /*Ctrl + K + C */
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;  
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+.content_links_navigation:hover{
+    background-color: var(--cor-primaria);
+}
+.footer{
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: 'Silkscreen', sans-serif;
+    font-weight: 400;
+}
+
+.foto_Patrick{
+    width: 25%;
+    background-color: var(--cor-terciaria);
+}
+
+@media (max-width: 1200px){
+    .header_menu{
+        padding: 10%;
+        justify-content: center;
+    }
+    .content{
+        flex-direction: column-reverse;
+    }
+}
